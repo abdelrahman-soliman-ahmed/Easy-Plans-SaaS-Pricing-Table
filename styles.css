@@ -1,0 +1,112 @@
+:root {
+    --primary-blue: #3498DB;
+    --accent-green: #2ECC71;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.pricing-card {
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dee2e6;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card.pro {
+    border: 2px solid var(--primary-blue);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(52, 152, 219, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(52, 152, 219, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(52, 152, 219, 0);
+    }
+}
+
+.card-header {
+    background-color: white;
+    border-bottom: 1px solid #dee2e6;
+    padding: 1.5rem;
+    border-radius: 10px 10px 0 0 !important;
+}
+
+.plan-name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.plan-price {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: var(--primary-blue);
+    margin-bottom: 0;
+}
+
+.plan-features {
+    padding: 1.5rem;
+}
+
+.plan-features ul {
+    padding-left: 1rem;
+    list-style-type: none;
+}
+
+.plan-features li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.plan-features li:before {
+    content: "✓";
+    color: var(--accent-green);
+    position: absolute;
+    left: 0;
+}
+
+.btn-signup {
+    background-color: var(--accent-green);
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 0.75rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-signup:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px);
+}
+
+.card-footer {
+    background-color: white;
+    border-top: none;
+    padding: 1.5rem;
+    border-radius: 0 0 10px 10px !important;
+}
